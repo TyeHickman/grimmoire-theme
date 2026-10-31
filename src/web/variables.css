@@ -1,0 +1,13 @@
+:root {
+  color-scheme: dark;
+  --grim-page-background: var(--grim-void);
+  --grim-surface-background: var(--grim-panel);
+  --grim-surface-raised: var(--grim-raised);
+  --grim-text: var(--grim-ink);
+  --grim-text-muted: var(--grim-muted);
+  --grim-link: #bd91ff;
+  --grim-link-hover: #d7b8ff;
+  --grim-focus: var(--grim-cyan);
+  --grim-code-background: #100b16;
+  --grim-content-width: var(--grim-line-width);
+}

@@ -1,0 +1,36 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   Popovers, menus, Canvas, and graph
+   ──────────────────────────────────────────────────────────────────────── */
+
+.theme-dark :is(.menu, .suggestion-container, .popover, .hover-popover) {
+  background: color-mix(in oklch, var(--grim-panel) 95%, transparent);
+  border: 1px solid var(--grim-border-bright);
+  box-shadow:
+    0 18px 60px color-mix(in oklch, black 48%, transparent),
+    0 0 28px color-mix(in oklch, var(--grim-violet) 9%, transparent);
+  backdrop-filter: blur(14px);
+}
+
+.theme-dark .suggestion-item.is-selected,
+.theme-dark .menu-item.selected:not(.is-disabled):not(.is-label) {
+  background: color-mix(in oklch, var(--grim-violet) 15%, transparent);
+  color: var(--grim-ink);
+}
+
+.theme-dark .canvas-node-container {
+  background: var(--grim-panel);
+  border-color: var(--grim-border);
+  box-shadow: 0 10px 34px color-mix(in oklch, black 32%, transparent);
+}
+
+.theme-dark .canvas-node.is-selected .canvas-node-container {
+  border-color: var(--grim-violet);
+  box-shadow:
+    0 12px 38px color-mix(in oklch, black 38%, transparent),
+    0 0 24px color-mix(in oklch, var(--grim-violet) 22%, transparent);
+}
+
+.theme-dark .graph-view.color-fill-focused {
+  color: var(--grim-cyan);
+}
+

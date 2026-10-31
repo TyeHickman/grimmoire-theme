@@ -1,0 +1,73 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   Workspace chrome
+   ──────────────────────────────────────────────────────────────────────── */
+
+.theme-dark .workspace-split.mod-root,
+.theme-dark .workspace-tabs,
+.theme-dark .workspace-leaf-content {
+  background-color: var(--background-primary);
+}
+
+.theme-dark .workspace-tab-header-container {
+  border-bottom: 1px solid var(--grim-border);
+}
+
+.theme-dark .workspace-tab-header.tappable.is-active {
+  box-shadow:
+    inset 0 -2px 0 var(--grim-violet),
+    0 6px 18px color-mix(in oklch, var(--grim-violet) 12%, transparent);
+}
+
+.theme-dark .workspace-ribbon,
+.theme-dark .side-dock-settings,
+.theme-dark .side-dock-actions {
+  background: #0b080f;
+}
+
+.theme-dark .status-bar {
+  background: color-mix(in oklch, var(--grim-panel) 96%, transparent);
+  border-color: var(--grim-border);
+  color: var(--grim-muted);
+  backdrop-filter: blur(10px);
+}
+
+.theme-dark .mod-left-split .workspace-tab-header-container,
+.theme-dark .mod-right-split .workspace-tab-header-container {
+  background: var(--grim-panel);
+}
+
+.theme-dark .nav-file-title.is-active,
+.theme-dark .nav-folder-title.is-active {
+  box-shadow: inset 2px 0 0 var(--grim-neon-blue);
+}
+
+.theme-dark :is(
+  .workspace-tab-header-inner-title,
+  .view-header-title,
+  .nav-header .nav-header-title
+) {
+  color: var(--grim-terminal-green);
+}
+
+.theme-dark :is(
+  .workspace-ribbon,
+  .side-dock-actions,
+  .side-dock-settings,
+  .nav-buttons-container,
+  .menu
+) .clickable-icon {
+  color: var(--grim-neon-blue);
+}
+
+.theme-dark :is(
+  .workspace-ribbon,
+  .side-dock-actions,
+  .side-dock-settings,
+  .nav-buttons-container,
+  .menu
+) .clickable-icon:hover {
+  color: var(--grim-neon-blue-bright);
+  background: color-mix(in oklch, var(--grim-neon-blue) 14%, transparent);
+  text-shadow: 0 0 12px color-mix(in oklch, var(--grim-neon-blue) 55%, transparent);
+}
+

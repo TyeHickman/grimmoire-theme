@@ -1,0 +1,21 @@
+:root {
+  --grim-void: #0d0912;
+  --grim-deep: #120d19;
+  --grim-panel: #171020;
+  --grim-raised: #20172b;
+  --grim-border: #382747;
+  --grim-border-bright: #614178;
+  --grim-violet: #a970ff;
+  --grim-magenta: #d45cff;
+  --grim-cyan: #55e6ff;
+  --grim-green: #65e6ae;
+  --grim-terminal-green: #44d62c;
+  --grim-heading-green: #3fc528;
+  --grim-neon-blue: #3db8ff;
+  --grim-neon-blue-bright: #7dd7ff;
+  --grim-amber: #e9bf71;
+  --grim-red: #ff668c;
+  --grim-ink: #e5deed;
+  --grim-muted: #a398af;
+  --grim-faint: #6f657a;
+}

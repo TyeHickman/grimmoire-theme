@@ -1,0 +1,5 @@
+:root {
+  --grim-shadow-low: 0 8px 28px color-mix(in oklch, black 15%, transparent);
+  --grim-shadow-high: 0 18px 60px color-mix(in oklch, black 48%, transparent);
+  --grim-focus-ring: 0 0 0 3px color-mix(in oklch, var(--grim-cyan) 35%, transparent);
+}

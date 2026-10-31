@@ -1,0 +1,18 @@
+.grimmoire-no-glow h1,
+.grimmoire-no-glow a:hover,
+.grimmoire-no-glow .grimmoire-surface,
+.grimmoire-no-glow .grimmoire-callout {
+  box-shadow: none;
+  text-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

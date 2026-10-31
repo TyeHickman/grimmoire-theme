@@ -1,0 +1,33 @@
+.grimmoire-surface {
+  padding: clamp(1rem, 4vw, 2rem);
+  border: 1px solid var(--grim-border);
+  border-radius: var(--grim-radius-l);
+  background: color-mix(in oklch, var(--grim-surface-background) 95%, transparent);
+  box-shadow: var(--grim-shadow-low);
+}
+
+.grimmoire-tag {
+  display: inline-flex;
+  padding: 0.15em 0.55em;
+  border: 1px solid color-mix(in oklch, var(--grim-violet) 42%, transparent);
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--grim-violet) 11%, transparent);
+  color: #d9beff;
+  font-family: var(--grim-font-interface);
+  font-size: 0.8em;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+}
+
+.grimmoire-callout {
+  --grim-callout-color: var(--grim-violet);
+  padding: 0.8rem 1rem;
+  border: 1px solid color-mix(in oklch, var(--grim-callout-color) 38%, transparent);
+  border-left-width: 3px;
+  border-radius: var(--grim-radius-m);
+  background: color-mix(in oklch, var(--grim-callout-color) 9%, var(--grim-deep));
+  box-shadow: var(--grim-shadow-low);
+}
+
+.grimmoire-callout[data-callout="ritual"] { --grim-callout-color: var(--grim-magenta); }
+.grimmoire-callout[data-callout="omen"] { --grim-callout-color: var(--grim-cyan); }

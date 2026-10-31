@@ -1,0 +1,48 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   Reduced glow and accessibility
+   Add `grimmoire-no-glow` under Settings → Appearance → CSS classes.
+   ──────────────────────────────────────────────────────────────────────── */
+
+body.grimmoire-no-glow .workspace-tab-header.tappable.is-active,
+body.grimmoire-no-glow .inline-title,
+body.grimmoire-no-glow .internal-link:hover,
+body.grimmoire-no-glow .external-link:hover,
+body.grimmoire-no-glow input[type="checkbox"]:checked,
+body.grimmoire-no-glow .canvas-node.is-selected .canvas-node-container {
+  box-shadow: none;
+  text-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-dark *,
+  .theme-dark *::before,
+  .theme-dark *::after {
+    scroll-behavior: auto;
+    transition-duration: 0.01ms;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+  }
+}
+
+/* Slim, low-contrast scrollbars. */
+.theme-dark ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.theme-dark ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb {
+  background: var(--grim-border);
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-clip: padding-box;
+}
+
+.theme-dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--grim-border-bright);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}

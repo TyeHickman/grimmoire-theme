@@ -1,0 +1,270 @@
+/*! Grimmoire Web 0.1.0 | source unreleased | generated artifact */
+
+:root {
+  --grim-void: #0d0912;
+  --grim-deep: #120d19;
+  --grim-panel: #171020;
+  --grim-raised: #20172b;
+  --grim-border: #382747;
+  --grim-border-bright: #614178;
+  --grim-violet: #a970ff;
+  --grim-magenta: #d45cff;
+  --grim-cyan: #55e6ff;
+  --grim-green: #65e6ae;
+  --grim-terminal-green: #44d62c;
+  --grim-heading-green: #3fc528;
+  --grim-neon-blue: #3db8ff;
+  --grim-neon-blue-bright: #7dd7ff;
+  --grim-amber: #e9bf71;
+  --grim-red: #ff668c;
+  --grim-ink: #e5deed;
+  --grim-muted: #a398af;
+  --grim-faint: #6f657a;
+}
+
+:root {
+  --grim-font-interface: Inter, "Avenir Next", system-ui, sans-serif;
+  --grim-font-text: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --grim-font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --grim-font-size: 17px;
+  --grim-line-height: 1.65;
+  --grim-line-width: 760px;
+  --grim-radius-s: 5px;
+  --grim-radius-m: 9px;
+  --grim-radius-l: 14px;
+}
+
+:root {
+  --grim-shadow-low: 0 8px 28px color-mix(in oklch, black 15%, transparent);
+  --grim-shadow-high: 0 18px 60px color-mix(in oklch, black 48%, transparent);
+  --grim-focus-ring: 0 0 0 3px color-mix(in oklch, var(--grim-cyan) 35%, transparent);
+}
+
+:root {
+  color-scheme: dark;
+  --grim-page-background: var(--grim-void);
+  --grim-surface-background: var(--grim-panel);
+  --grim-surface-raised: var(--grim-raised);
+  --grim-text: var(--grim-ink);
+  --grim-text-muted: var(--grim-muted);
+  --grim-link: #bd91ff;
+  --grim-link-hover: #d7b8ff;
+  --grim-focus: var(--grim-cyan);
+  --grim-code-background: #100b16;
+  --grim-content-width: var(--grim-line-width);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--grim-page-background);
+  color: var(--grim-text);
+  font-family: var(--grim-font-text);
+  font-size: var(--grim-font-size);
+  line-height: var(--grim-line-height);
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% -20%, color-mix(in oklch, var(--grim-violet) 10%, transparent), transparent 42rem),
+    var(--grim-page-background);
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+}
+
+main,
+.grimmoire-prose {
+  width: min(100% - 2rem, var(--grim-content-width));
+  margin-inline: auto;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  margin-block: 1.6em 0.55em;
+  color: var(--grim-heading-green);
+  font-family: var(--grim-font-text);
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+h1 {
+  color: var(--grim-terminal-green);
+  font-size: clamp(2.1rem, 7vw, 3.7rem);
+  letter-spacing: -0.025em;
+  text-shadow: 0 0 22px color-mix(in oklch, var(--grim-terminal-green) 18%, transparent);
+}
+
+h2 {
+  padding-bottom: 0.28em;
+  border-bottom: 1px solid var(--grim-border);
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+}
+
+h3 { color: #39b524; }
+h4 { color: #33a320; }
+h5 { color: #2e921d; }
+h6 { color: #29821a; }
+
+p,
+ul,
+ol,
+blockquote,
+pre,
+table {
+  margin-block: 0 1.25em;
+}
+
+a {
+  color: var(--grim-link);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--grim-link-hover);
+  text-shadow: 0 0 12px color-mix(in oklch, currentColor 42%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--grim-focus);
+  outline-offset: 3px;
+  box-shadow: var(--grim-focus-ring);
+}
+
+::selection {
+  background: color-mix(in oklch, var(--grim-magenta) 30%, transparent);
+}
+
+hr {
+  height: 1px;
+  margin-block: 2.5rem;
+  border: 0;
+  background: linear-gradient(90deg, transparent, var(--grim-violet) 22%, var(--grim-cyan) 50%, var(--grim-violet) 78%, transparent);
+  opacity: 0.55;
+}
+
+blockquote {
+  margin-inline: 0;
+  padding: 0.65em 1em;
+  border-left: 3px solid var(--grim-violet);
+  border-radius: 0 var(--grim-radius-m) var(--grim-radius-m) 0;
+  background: linear-gradient(90deg, color-mix(in oklch, var(--grim-violet) 9%, transparent), transparent 82%);
+  color: #c8bfd2;
+}
+
+code,
+kbd,
+samp {
+  border: 1px solid color-mix(in oklch, var(--grim-violet) 18%, transparent);
+  border-radius: var(--grim-radius-s);
+  background: var(--grim-code-background);
+  font-family: var(--grim-font-monospace);
+}
+
+:not(pre) > code {
+  padding: 0.12em 0.3em;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border: 1px solid var(--grim-border);
+  border-left: 2px solid var(--grim-violet);
+  border-radius: var(--grim-radius-m);
+  background: var(--grim-code-background);
+  box-shadow: 0 8px 30px color-mix(in oklch, black 24%, transparent);
+}
+
+pre > code {
+  border: 0;
+  background: transparent;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.65rem 0.8rem;
+  border: 1px solid var(--grim-border);
+  text-align: left;
+}
+
+th { background: var(--grim-panel); }
+tbody tr:nth-child(even) { background: color-mix(in oklch, var(--grim-violet) 3%, transparent); }
+tbody tr:hover { background: color-mix(in oklch, var(--grim-violet) 7%, transparent); }
+
+.grimmoire-surface {
+  padding: clamp(1rem, 4vw, 2rem);
+  border: 1px solid var(--grim-border);
+  border-radius: var(--grim-radius-l);
+  background: color-mix(in oklch, var(--grim-surface-background) 95%, transparent);
+  box-shadow: var(--grim-shadow-low);
+}
+
+.grimmoire-tag {
+  display: inline-flex;
+  padding: 0.15em 0.55em;
+  border: 1px solid color-mix(in oklch, var(--grim-violet) 42%, transparent);
+  border-radius: 999px;
+  background: color-mix(in oklch, var(--grim-violet) 11%, transparent);
+  color: #d9beff;
+  font-family: var(--grim-font-interface);
+  font-size: 0.8em;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+}
+
+.grimmoire-callout {
+  --grim-callout-color: var(--grim-violet);
+  padding: 0.8rem 1rem;
+  border: 1px solid color-mix(in oklch, var(--grim-callout-color) 38%, transparent);
+  border-left-width: 3px;
+  border-radius: var(--grim-radius-m);
+  background: color-mix(in oklch, var(--grim-callout-color) 9%, var(--grim-deep));
+  box-shadow: var(--grim-shadow-low);
+}
+
+.grimmoire-callout[data-callout="ritual"] { --grim-callout-color: var(--grim-magenta); }
+.grimmoire-callout[data-callout="omen"] { --grim-callout-color: var(--grim-cyan); }
+
+.grimmoire-no-glow h1,
+.grimmoire-no-glow a:hover,
+.grimmoire-no-glow .grimmoire-surface,
+.grimmoire-no-glow .grimmoire-callout {
+  box-shadow: none;
+  text-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

@@ -1,0 +1,11 @@
+:root {
+  --grim-font-interface: Inter, "Avenir Next", system-ui, sans-serif;
+  --grim-font-text: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --grim-font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --grim-font-size: 17px;
+  --grim-line-height: 1.65;
+  --grim-line-width: 760px;
+  --grim-radius-s: 5px;
+  --grim-radius-m: 9px;
+  --grim-radius-l: 14px;
+}

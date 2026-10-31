@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--grim-page-background);
+  color: var(--grim-text);
+  font-family: var(--grim-font-text);
+  font-size: var(--grim-font-size);
+  line-height: var(--grim-line-height);
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 50% -20%, color-mix(in oklch, var(--grim-violet) 10%, transparent), transparent 42rem),
+    var(--grim-page-background);
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+}

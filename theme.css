@@ -1,15 +1,9 @@
 /*
  * Grimmoire 0.1.0
- * A dark, neon-arcane theme for Obsidian.
+ * Generated Obsidian theme. Edit src/, then run npm run build.
  */
 
-/* ──────────────────────────────────────────────────────────────────────────
-   Foundations
-   ──────────────────────────────────────────────────────────────────────── */
-
 .theme-dark {
-  color-scheme: dark;
-
   --grim-void: #0d0912;
   --grim-deep: #120d19;
   --grim-panel: #171020;
@@ -29,6 +23,39 @@
   --grim-ink: #e5deed;
   --grim-muted: #a398af;
   --grim-faint: #6f657a;
+}
+
+.theme-dark {
+  --grim-font-interface: Inter, "Avenir Next", system-ui, sans-serif;
+  --grim-font-text: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --grim-font-monospace: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --grim-font-size: 17px;
+  --grim-line-height: 1.65;
+  --grim-line-width: 760px;
+  --grim-radius-s: 5px;
+  --grim-radius-m: 9px;
+  --grim-radius-l: 14px;
+}
+
+.theme-dark {
+  --grim-shadow-low: 0 8px 28px color-mix(in oklch, black 15%, transparent);
+  --grim-shadow-high: 0 18px 60px color-mix(in oklch, black 48%, transparent);
+  --grim-focus-ring: 0 0 0 3px color-mix(in oklch, var(--grim-cyan) 35%, transparent);
+}
+
+.theme-dark {
+  color-scheme: dark;
+
+  --font-interface-theme: var(--grim-font-interface);
+  --font-text-theme: var(--grim-font-text);
+  --font-monospace-theme: var(--grim-font-monospace);
+  --font-text-size: var(--grim-font-size);
+  --line-height-normal: var(--grim-line-height);
+  --line-width: var(--grim-line-width);
+
+  --radius-s: var(--grim-radius-s);
+  --radius-m: var(--grim-radius-m);
+  --radius-l: var(--grim-radius-l);
 
   --color-base-00: var(--grim-void);
   --color-base-05: #100b16;
@@ -82,17 +109,6 @@
   --interactive-hover: #2a1c37;
   --interactive-accent: var(--grim-violet);
   --interactive-accent-hover: #bd91ff;
-
-  --font-interface-theme: Inter, "Avenir Next", system-ui, sans-serif;
-  --font-text-theme: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  --font-monospace-theme: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  --font-text-size: 17px;
-  --line-height-normal: 1.65;
-  --line-width: 760px;
-
-  --radius-s: 5px;
-  --radius-m: 9px;
-  --radius-l: 14px;
 
   --divider-color: var(--grim-border);
   --divider-color-hover: var(--grim-violet);

@@ -1,0 +1,130 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   Editor and reading view
+   ──────────────────────────────────────────────────────────────────────── */
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-active.cm-line {
+  background: linear-gradient(
+    90deg,
+    color-mix(in oklch, var(--grim-violet) 8%, transparent),
+    transparent 72%
+  );
+  border-radius: var(--radius-s);
+}
+
+.theme-dark .markdown-source-view.mod-cm6 .cm-gutters {
+  color: var(--grim-faint);
+  background: transparent;
+  border-right: 1px solid var(--grim-border);
+}
+
+.theme-dark .markdown-preview-view,
+.theme-dark .markdown-source-view {
+  --file-line-width: var(--line-width);
+}
+
+.theme-dark .inline-title {
+  color: var(--grim-terminal-green);
+  font-family: var(--font-text-theme);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  text-shadow: 0 0 22px color-mix(in oklch, var(--grim-terminal-green) 18%, transparent);
+}
+
+.theme-dark .markdown-rendered :is(h1, h2, h3, h4, h5, h6),
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-header {
+  font-family: var(--font-text-theme);
+  letter-spacing: -0.015em;
+}
+
+.theme-dark .markdown-rendered h1,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  color: var(--grim-terminal-green);
+}
+
+.theme-dark .markdown-rendered h2,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-header-2 {
+  color: var(--grim-heading-green);
+}
+
+.theme-dark .markdown-rendered h2 {
+  border-bottom: 1px solid var(--grim-border);
+  padding-bottom: 0.28em;
+}
+
+.theme-dark .markdown-rendered h3,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-header-3 {
+  color: #39b524;
+}
+
+.theme-dark .markdown-rendered h4,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-header-4 {
+  color: #33a320;
+}
+
+.theme-dark .markdown-rendered h5,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-header-5 {
+  color: #2e921d;
+}
+
+.theme-dark .markdown-rendered h6,
+.theme-dark .markdown-source-view.mod-cm6 .HyperMD-header-6 {
+  color: #29821a;
+}
+
+.theme-dark .markdown-rendered hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--grim-violet) 22%,
+    var(--grim-cyan) 50%,
+    var(--grim-violet) 78%,
+    transparent
+  );
+  opacity: 0.55;
+}
+
+.theme-dark .markdown-rendered blockquote {
+  background: linear-gradient(
+    90deg,
+    color-mix(in oklch, var(--grim-violet) 9%, transparent),
+    transparent 82%
+  );
+  border-radius: 0 var(--radius-m) var(--radius-m) 0;
+  padding: 0.65em 1em;
+}
+
+.theme-dark :is(.markdown-rendered, .markdown-source-view.mod-cm6) a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.theme-dark .internal-link:hover,
+.theme-dark .external-link:hover {
+  text-shadow: 0 0 12px color-mix(in oklch, currentColor 42%, transparent);
+}
+
+.theme-dark .markdown-rendered mark,
+.theme-dark .cm-highlight {
+  color: #f2e9fa;
+  border-radius: 3px;
+  padding: 0.05em 0.16em;
+}
+
+.theme-dark :is(code, .cm-inline-code) {
+  border: 1px solid color-mix(in oklch, var(--grim-violet) 18%, transparent);
+  border-radius: 5px;
+}
+
+.theme-dark pre > code {
+  border: 0;
+}
+
+.theme-dark .markdown-rendered pre {
+  border: 1px solid var(--grim-border);
+  border-left: 2px solid var(--grim-violet);
+  border-radius: var(--radius-m);
+  box-shadow: 0 8px 30px color-mix(in oklch, black 24%, transparent);
+}
+

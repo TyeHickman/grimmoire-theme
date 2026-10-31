@@ -1,0 +1,59 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   Tags, properties, tasks, and callouts
+   ──────────────────────────────────────────────────────────────────────── */
+
+.theme-dark .tag {
+  font-family: var(--font-interface-theme);
+  font-size: 0.8em;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+}
+
+.theme-dark .metadata-container {
+  background: color-mix(in oklch, var(--grim-panel) 74%, transparent);
+  border: 1px solid var(--grim-border);
+  border-radius: var(--radius-m);
+  padding: 0.5em 0.75em;
+}
+
+.theme-dark .metadata-property:focus-within {
+  background: color-mix(in oklch, var(--grim-violet) 8%, transparent);
+  box-shadow: inset 2px 0 0 var(--grim-violet);
+}
+
+.theme-dark input[type="checkbox"] {
+  box-shadow: 0 0 0 1px color-mix(in oklch, var(--grim-violet) 18%, transparent);
+}
+
+.theme-dark input[type="checkbox"]:checked {
+  box-shadow: 0 0 12px color-mix(in oklch, var(--grim-violet) 34%, transparent);
+}
+
+.theme-dark .callout {
+  background: color-mix(in oklch, rgb(var(--callout-color)) 9%, var(--grim-deep));
+  border: 1px solid color-mix(in oklch, rgb(var(--callout-color)) 38%, transparent);
+  border-left-width: 3px;
+  border-radius: var(--radius-m);
+  box-shadow: 0 8px 28px color-mix(in oklch, black 15%, transparent);
+}
+
+.theme-dark .callout-title {
+  letter-spacing: 0.025em;
+}
+
+.theme-dark .callout[data-callout="lore"],
+.theme-dark .callout[data-callout="arcana"] {
+  --callout-color: 169, 112, 255;
+  --callout-icon: lucide-sparkles;
+}
+
+.theme-dark .callout[data-callout="ritual"] {
+  --callout-color: 212, 92, 255;
+  --callout-icon: lucide-flame;
+}
+
+.theme-dark .callout[data-callout="omen"] {
+  --callout-color: 85, 230, 255;
+  --callout-icon: lucide-eye;
+}
+
