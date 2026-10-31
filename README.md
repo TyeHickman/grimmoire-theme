@@ -7,6 +7,16 @@ The repository produces two artifacts:
 - `theme.css` and `manifest.json`, an installable Obsidian theme.
 - `dist/web/grimmoire-web.css`, reusable CSS for ordinary websites.
 
+## Preview
+
+### Obsidian
+
+![Grimmoire in Obsidian, showing the file navigator, reading view, custom callouts, and a JavaScript code block](screenshots/obsidian-overview.png)
+
+### Web
+
+![Grimmoire's reusable web CSS, showing manuscript typography, a surface card, and the beginning of the callout section](screenshots/web-preview.png)
+
 ## Install in Obsidian
 
 1. Download `manifest.json` and `theme.css` from the same release.
@@ -81,7 +91,7 @@ Release tags must exactly match the version in `manifest.json`. Attach `manifest
 
 ## Screenshots and support
 
-Release screenshots belong in `screenshots/`; see its README for the capture checklist. Compatibility reports should include the Obsidian or browser version, operating system, relevant plugins or extensions, and reproduction steps. Support is best-effort and does not imply compatibility with every third-party Obsidian plugin.
+Release screenshots are captured from the public fixtures in `examples/`; see `screenshots/README.md` for dimensions and recapture guidance. Compatibility reports should include the Obsidian or browser version, operating system, relevant plugins or extensions, and reproduction steps. Support is best-effort and does not imply compatibility with every third-party Obsidian plugin.
 
 ## License
 
